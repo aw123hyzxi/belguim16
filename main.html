@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belguim16 Appreciation</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* MASSIVE corner images */
+        .corner-image {
+            position: absolute;
+            width: 500px; /* Increase this number for even bigger */
+            height: auto;
+            border-radius: 10px;
+            opacity: 0.9;
+            pointer-events: none; /* prevents blocking clicks */
+        }
+
+        .top-left { top: -50px; left: -50px; }
+        .top-right { top: -50px; right: -50px; }
+        .bottom-left { bottom: -50px; left: -50px; }
+        .bottom-right { bottom: -50px; right: -50px; }
+
+        .container {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            z-index: 10;
+        }
+
+        .center-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .label {
+            position: absolute;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Spider‑diagram positions */
+        .top { top: 0; left: 50%; transform: translateX(-50%); }
+        .bottom { bottom: 0; left: 50%; transform: translateX(-50%); }
+        .left { left: 0; top: 50%; transform: translateY(-50%); }
+        .right { right: 0; top: 50%; transform: translateY(-50%); }
+        .top-left-label { top: 10%; left: 10%; }
+        .top-right-label { top: 10%; right: 10%; }
+        .bottom-left-label { bottom: 10%; left: 10%; }
+        .bottom-right-label { bottom: 10%; right: 10%; }
+    </style>
+</head>
+<body>
+
+    <!-- HUGE corner images -->
+    <img src="image2.png" class="corner-image top-left" alt="">
+    <img src="image2.png" class="corner-image top-right" alt="">
+    <img src="image2.png" class="corner-image bottom-left" alt="">
+    <img src="image2.png" class="corner-image bottom-right" alt="">
+
+    <div class="container">
+        <img src="image.png" class="center-image" alt="Belguim16">
+
+        <div class="label top">SO COOL</div>
+        <div class="label bottom">LUXEMBOURG16</div>
+        <div class="label left">NEOHERE FANBOY</div>
+        <div class="label right">ARIANA GRANDE FAN</div>
+        <div class="label top-left-label">SHORT 4'11</div>
+        <div class="label top-right-label">VERY FAT</div>
+        <div class="label bottom-left-label">BA ADDICT</div>
+        <div class="label bottom-right-label">MEMBER CHAT DWELLER</div>
+    </div>
+
+</body>
+</html>
